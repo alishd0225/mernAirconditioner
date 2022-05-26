@@ -1,0 +1,112 @@
+.productHeading {
+  margin: 2vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid rgb(40, 40, 40);
+  padding: 2vmax;
+  color: rgb(19, 19, 19);
+  font: 500 1.8vmax "Roboto";
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1vmax 8vmax;
+  justify-content: center;
+  min-height: 30vh;
+}
+
+.paginationBox{
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item{
+  background-color: beige;
+  list-style: none;
+  border: 1px solid rgb(26, 25, 25);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.page-item:first-child{
+  border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child{
+  border-radius: 0 5px 5px 0;
+}
+
+.page-link{
+  text-decoration: none;
+  font: 300 1vmax "Roboto";
+  color: rgb(38, 42, 166);
+  transition: all 0.3s;
+}
+
+.page-item:hover{
+  background-color: rgba(46, 46, 48, 0.444);
+}
+
+.page-item:hover .page-link{
+  color: rgb(14, 14, 90);
+}
+
+.pageItemActive{
+  background-color: blue;
+}
+
+.pageLinkActive{
+  color: white;
+}
+
+.filterBox{
+  width: 10vmax;
+  position: absolute;
+  padding: 10px;
+  top: 10vmax;
+  left: 2vmax;
+}
+
+.categoryBox{
+  padding: 0%;
+
+}
+.category-link{
+  list-style: none;
+  color: rgb(30, 29, 29); 
+  font: 300 1vmax "Roboto";
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.category-link:hover{
+  color: rgb(37, 37, 196);
+}
+
+.filterBox > fieldset{
+  border: 1px solid rgb(44, 44, 44);
+
+}
+
+@media screen and (max-width:600px) {
+  .filterBox{
+    width: 20vmax;
+    position: static;
+    margin: auto;
+  }
+  .page-link{
+    font: 300 1.7vmax "Roboto";
+  }
+  .category-link{
+    font: 400 1.8vmax "Roboto";
+  }
+}
